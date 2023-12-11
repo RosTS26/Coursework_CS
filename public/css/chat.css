@@ -1,0 +1,412 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Aling, sans-serif;
+}
+
+/*.panel-col {
+	display: flex;
+	justify-content: center;
+}
+
+.panel-row {
+	display: flex;
+	flex-direction: row;
+}*/
+
+/*.blockPanel {
+	display: block;
+	margin: 50px 0 0 50px;
+	padding-bottom: 30px;
+	width: 480px;
+	border: 1px solid #006262;
+	border-radius: 5px;
+}*/
+
+.btns {
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(#49708f, #293f50);
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    width: 150px;
+    height: 37px;
+    padding-top: 6px;
+    margin-top: 30px;
+}
+
+textarea {
+	font-size: 18px;
+	overflow: auto;
+	resize: none;
+	width: 220px;
+	height: 100px;
+	padding: 5px 5px;
+	margin-left: 10px;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.res {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 24px;
+	color: #F07427;
+	margin: 0;
+}
+
+/* Стили для таблиц рейтинга */
+
+table {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 20px;
+	/*border-collapse: collapse;*/
+	border-spacing: 0;
+	border-color: #006262;
+	border-radius: 10px !important;
+}
+
+caption {
+	text-transform: uppercase;
+	color: #49708f;
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+
+th, td {
+	text-align: center;
+	color: #293f50;
+	width: 130px;
+	padding: 5px 10px;
+	border: none;
+}
+/* Скругляем углы у ячеек таблицы */
+th:first-child { border-top-left-radius: 10px; }
+th:last-child { border-top-right-radius: 10px; }
+td:first-child { border-bottom-left-radius: 10px; }
+td:last-child { border-bottom-right-radius: 10px; }
+
+tr:nth-child(odd) { 
+	background: #eee;
+}
+
+/* ===== Модуль друзей === */
+
+.blockPanelFriend {
+	display: block;
+    margin: 0 auto;
+	width: 90%;
+    height: 86vh;
+	padding-bottom: 10px;
+	border: 1px solid #006262;
+	border-radius: 5px;
+}
+
+.container {
+	display: flex;
+	margin: 0 10px;
+}
+
+/* Поле просмотра/добавления/отклоенение заявок в друзья */
+
+.friends-menu {
+	flex-basis: 28%;
+	display: flex;
+	flex-direction: column;
+	margin-right: 10px;
+}
+
+.header_P {
+	margin: 10px 0px;
+	font-size: 30px;
+	color: #49708f;
+}
+
+.add-friend, .btns-menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	/*width: 32.4%;*/
+	/*margin-left: 10px;*/
+	margin-bottom: 10px;
+}
+
+.add-friend p {
+	width: 90px;
+	font-size: 16px;
+    margin: 0;
+	margin-right: 6px;
+	color: #49708f;
+}
+
+#friend-name {
+	font-size: 16px;
+	width: 60%;
+	border: 0;
+	background: #C8C8C8;
+	border-radius: 10px;
+	padding: 6px 12px;
+	outline: none;
+}
+
+#friend-add {
+	margin: 0;
+	padding: 0;
+	margin-left: 10px;
+	width: 56px;
+	border-radius: 10px;
+	font-size: 14px;
+}
+
+.btns-menu label {
+	margin-top: 0;
+	font-size: 14px;
+	text-align: center;
+	border-radius: 10px;
+	width: 100px;
+}
+
+#chat {
+	background: linear-gradient(#49B681, #298533);
+}
+
+#option1, #option2, #option3, #radio-chat, #radio-stat {
+	display: none;
+}
+
+.check-newMsg, .online {
+	display: block;
+	position: absolute;
+	background: red;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 14px;
+	align-items: center;
+	margin-top: -35px;
+	margin-left: 90%;
+}
+
+.online {
+	height: auto;
+	width: auto;
+	padding: 2px 7px;
+	margin-top: -40px;
+	left: 2%;
+	border-radius: 8px;
+	background: #007900;
+}
+
+/* Поле для отображения информации о выбраном друге */
+
+.friend-profile {
+	flex-basis: 71%;
+	/*display: flex;*/
+	display: none;
+	flex-direction: column;
+}
+
+.fp-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.information {
+	margin-left: 30px;
+	font-size: 22px;
+	color: #49708f;
+}
+
+#username {
+	margin-bottom: 20px;
+}
+
+#online-check {
+	display: block;
+	position: absolute;
+	background: red;
+	color: #fff;
+	border-radius: 10px;
+	font-size: 20px;
+	align-items: center;
+	padding: 2px 7px;
+	width: auto;
+	height: auto;
+	margin-top: -25px;
+	margin-left: 80px;
+}
+
+.functions-btns {
+	display: flex;
+    justify-content: end;
+    align-items: end;
+	margin-left: 10px;
+}
+
+.functions-btns input {
+	text-align: center;
+	border-radius: 10px;
+	font-size: 14px;
+    margin-bottom: 6px;
+    margin-left: 10px;
+	width: 100px;
+    height: 40px;
+    border: 0;
+    background: linear-gradient(#49708f, #293f50);
+    color: #fff;
+}
+
+/* Стили для контейнера со списком юзеров */
+
+.friends_info {
+	flex-basis: 28%;
+	background: #C8C8C8;
+	border-radius: 10px;
+	margin-right: 10px;
+	height: 61vh;
+	max-height: 61vh;
+	overflow: auto;
+}
+
+.friends_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.friends_list li {
+    position: relative;
+	list-style: none;
+	margin-top: 15px;
+	cursor: pointer;
+	background: #F0F0F0;
+	width: 70%;
+    min-width: 200px;
+	text-align: center;
+	padding: 8px 16px;
+	font-size: 20px;
+	border-radius: 10px;
+}
+
+/*===*/
+/* Стили для контейнера чата */
+
+.field_for_message {
+	display: flex;
+    flex-direction: column;
+	flex-basis: 71%;
+	/* flex-grow: 0; Не растягивать в ширину */
+  	/* flex-shrink: 0; Не сжимать в ширину */
+	/* height: 61vh;
+	max-height: 61vh; */
+    height: 451px;
+    max-height: 451px;
+	overflow: auto;
+}
+
+.chat-container {
+	display: flex;
+	flex-direction: column;
+	height: 402px;
+    max-height: 402px;
+	overflow: auto;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 20px;
+	background-color: #C8C8C8;
+	border-radius: 10px;
+}
+
+.chat-info {
+	display: block;
+	margin: auto;
+    padding: 8px 16px;
+    border-radius: 50px;
+	font-size: 20px;
+    background-color: #c1e2fc;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+.message {
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 10px;
+	max-width: 67%;
+}
+
+.sent-message {
+	background-color: #c1e2fc;
+	align-self: flex-end;
+}
+
+.received-message {
+	background-color: #e5e5e5;
+	align-self: flex-start;
+}
+
+.message-text {
+	color: #333;
+    margin: 0;
+}
+
+.message-time {
+	font-size: 12px;
+	color: #999;
+}
+
+.chat-info {
+	display: block;
+	margin: auto;
+	/*margin-top: 100px;*/
+	font-size: 24px;
+}
+
+.newMsgInfo {
+	display: block;
+	margin: 10px auto;
+	color: #49708f;
+}
+
+.text-and-btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #C8C8C8;
+	border-radius: 10px;
+}
+
+.text-and-btn textarea {
+	width: 100%;
+	height: 39px;
+    max-height: 124px;
+    overflow: auto;
+    font-size: 18px;
+	padding: 4.5px;
+	margin-right: 10px;
+	border-radius: 10px;
+	border: 0;
+	background-color: #C8C8C8;
+}
+
+.text-and-btn .btn {
+    align-self: end;
+    height: 39px;
+	margin: 0;
+	border-radius: 10px;
+    background: #50C878;
+    color: #fff;
+    border: 0;
+}
+
